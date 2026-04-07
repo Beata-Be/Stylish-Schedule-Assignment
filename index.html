@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Daily Schedule</title>
+    <style>
+        /* Table: general style with orange border */
+        table {
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            border: 3px solid #ff9800; /* Bright orange */
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.2);
+        }
+
+        /* Table Headers: rich orange background */
+        th {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        /* Table Cells: light yellowish tint for all cells */
+        td {
+            padding: 12px;
+            border: 1px solid #ffcc80;
+            color: #444;
+            background-color: #fffde7; /* Very light yellow */
+        }
+
+        /* Table Row (via ID): highlighting free time in bright yellow */
+        #afternoon-break {
+            background-color: #fff176; 
+            font-weight: bold;
+        }
+
+        /* Table Column (via class): making the time column orange */
+        .time-column {
+            width: 150px;
+            background-color: #ffe0b2;
+            color: #e65100;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Hover effect for convenience */
+        tr:hover {
+            background-color: #fff9c4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center; color: #e65100;">My Daily Routine</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Task / Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-column">07:30 AM</td>
+                <td>Wake up and get ready</td>
+            </tr>
+            <tr>
+                <td class="time-column">08:15 AM</td>
+                <td>Breakfast</td>
+            </tr>
+            <tr>
+                <td class="time-column">09:00 AM</td>
+                <td>School lessons</td>
+            </tr>
+            <tr>
+                <td class="time-column">01:30 PM</td>
+                <td>Lunch break</td>
+            </tr>
+            <tr id="afternoon-break">
+                <td class="time-column">03:30 PM</td>
+                <td>Free time / Music / Hobby</td>
+            </tr>
+            <tr>
+                <td class="time-column">05:00 PM</td>
+                <td>Homework and study</td>
+            </tr>
+            <tr>
+                <td class="time-column">07:00 PM</td>
+                <td>Dinner with family</td>
+            </tr>
+            <tr>
+                <td class="time-column">09:30 PM</td>
+                <td>Shower and chill before bed</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
